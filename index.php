@@ -2,15 +2,15 @@
 
 use \Illuminate\Database\Capsule\Manager as Manager;
 
-require '../vendor/autoload.php';
-require '../src/models/postings.php';
-require '../src/models/version.php';
-require '../src/models/users.php';
+require 'vendor/autoload.php';
+require 'src/models/postings.php';
+require 'src/models/version.php';
+require 'src/models/users.php';
 
-require '../src/middleware/authenticate.php';
-require '../src/handlers/exception.php';
+require 'src/middleware/authenticate.php';
+require 'src/handlers/exception.php';
 
-$config = include('../src/config.php');
+$config = include('src/config.php');
 
 $app = new \Slim\App(['settings' => $config]);
 
