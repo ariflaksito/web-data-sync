@@ -13,7 +13,7 @@ Untuk lebih detail konsepnya bisa dipelajari artikel berikut:
 
 ### Fitur
 - Menggunakan Eloquent untuk Database
-- Menggunakan Middleware untuk validasi token
+- Menggunakan Slim Middleware untuk validasi token
 
 ### Branch
 Silahkan clone masing-masing branch sesuai kebutuhnnya
