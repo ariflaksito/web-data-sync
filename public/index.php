@@ -47,13 +47,14 @@ $app->post('/msg', function($req, $res, $args){
 
 	if($req->isPost()){
 		$post = $req->getParsedBody();
-		$uid = $post['uid'];
 		$msg = $post['msg'];
 		$out = array();
 		$status = 500;
 
 		try{
-		    Postings::addPosting($uid, $msg);
+            $user = $req->getAttribute('user');
+
+            Postings::addPosting($user['uid'], $msg);
             $out['msg'] = "Kirim pesan berhasil";
             $status = 200;
 		}catch(Exception $e){

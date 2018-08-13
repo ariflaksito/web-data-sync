@@ -2,7 +2,7 @@
 
 class Authenticate{
 
-    var $whiteList = array('\/auth','\/');
+    var $whiteList = array('\/auth');
 
     public function __invoke($request, $response, $next)
     {
@@ -19,6 +19,7 @@ class Authenticate{
 
             }else if(Users::validateToken($token)){
                 if($this->isTokenAlive()){
+                    $request = $request->withAttribute('user', Users::$val);
                     $response = $next($request, $response);
                     return $response;
                 }else{
