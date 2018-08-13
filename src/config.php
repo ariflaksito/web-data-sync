@@ -2,6 +2,7 @@
 return [
     'determineRouteBeforeAppMiddleware' => false,
     'outputBuffering' => false,
+    'tokenExpired' => '+1 hour',
     'displayErrorDetails' => true,
     'db' => [
         'driver'    => 'mysql',
