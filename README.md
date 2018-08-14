@@ -20,3 +20,4 @@ Silahkan clone masing-masing branch sesuai kebutuhnnya
 - basic > slim tanpa eloquent, tanpa middleware validasi token
 - updates/using_eloquent > slim menggunakan eloquent
 - updates/auth_token, master > slim, eloquent, middleware validasi token
+- run_apache > versi final yg berjalan dg web server apache
