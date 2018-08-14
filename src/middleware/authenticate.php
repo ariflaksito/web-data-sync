@@ -2,7 +2,7 @@
 
 class Authenticate{
 
-    var $whiteList = array('\/auth');
+    var $whiteList = array('auth');
 
     public function __invoke($request, $response, $next)
     {
